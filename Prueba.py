@@ -57,26 +57,26 @@ while rund:
                 print("-------------------------------------------")
                 print(random_enemy, " is attack you with ", enemy[1]," Damage")
                 print("You have ", hp_main, " HP now")
-                print("Your are does ", main_character[1]," Damage")
+                print("Your are ", main_character[1]," Damage")
                 print("The enemy has ", hp_enemy, " HP")
             elif move == 1 and enemy_choose == "Defend":
                 #Si enemigo defiende y jugador ataca
                 hp_enemy = hp_enemy - (main_character[1] - enemy[2])
                 print("-------------------------------------------")
                 print(random_enemy, " is defended whit ", enemy[2], " point of defend")
-                print("Your are does attack ", main_character[1] - enemy[2] ," Damage")
+                print("Your are attack ", main_character[1] - enemy[2] ," Damage")
                 print("The enemy has ", hp_enemy, " HP")
             elif move == 2 and enemy_choose == "Attack":
                 #Si jugador defiende y enemigo ataca
                 hp_main = hp_main - (enemy[1] - main_character[2])
                 print("-------------------------------------------")
-                print("You are does defend whit ", main_character[2] ," point of defend")
+                print("You are defend whit ", main_character[2] ," point of defend")
                 print(random_enemy, " is attack you with ", enemy[1] - main_character[2]," Damage")
                 print("You have ", hp_main, " HP now")
             elif move == 2 and enemy_choose == "Defend":
                 print("-------------------------------------------")
-                print(random_enemy," is does Defend")
-                print("You are does defend too")
+                print(random_enemy," is Defend")
+                print("You are defend too")
                 print("This turn not damage")
             elif move == 3:
                 break
